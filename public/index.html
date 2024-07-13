@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Inversiones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Calculadora de Inversiones</h1>
+    <div class="grid" id="emisor-container"></div>
+    <div class="investment">
+        <label for="monto">Monto a Invertir:</label>
+        <input type="number" id="monto" name="monto" value="10000000">
+        <button onclick="calcular()">Calcular</button>
+    </div>
+    <div class="result" id="resultado" style="display: none;">
+        <h2>Resultado de la Simulación</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Emisor</th>
+                    <th>Inversión</th>
+                    <th>Acciones</th>
+                    <th>Valor Final</th>
+                    <th>Ganancia Proyectada</th>
+                </tr>
+            </thead>
+            <tbody id="resultado-table-body"></tbody>
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

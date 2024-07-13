@@ -1,0 +1,141 @@
+/* Importa la fuente SF Pro Display */
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600&display=swap');
+
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: 'SF Pro Display', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos para encabezados */
+h1, h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #004085;
+}
+
+/* Grid para los elementos */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Estilos para los elementos del grid */
+.grid-item {
+    padding: 20px;
+    border-radius: 8px;
+    width: calc(25% - 20px);
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.grid-item h2 {
+    margin-top: 0;
+}
+
+.grid-item.comprar {
+    background-color: rgba(0, 128, 0, 0.2);
+}
+
+.grid-item.vender {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.grid-item.mantener {
+    background-color: rgba(255, 255, 0, 0.2);
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos para los campos de entrada */
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+/* Efecto al enfocar los campos de entrada */
+.form-group input:focus, .form-group select:focus {
+    border-color: #007bff;
+}
+
+/* Resaltar campos requeridos no completados */
+input:required:invalid, select:required:invalid {
+    border-color: red;
+    background-color: rgba(255, 0, 0, 0.05);
+}
+
+/* Estilos para las etiquetas */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto hover para botones */
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Estilo para el botón en contenedor de navegación */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .grid-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-item {
+        width: 100%;
+    }
+}

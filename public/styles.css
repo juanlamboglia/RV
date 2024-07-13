@@ -1,0 +1,135 @@
+/* Importa la fuente SF Pro Display */
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600&display=swap');
+
+body {
+    font-family: 'SF Pro Display', sans-serif; /* Fuente de Apple */
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #007bff;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.emisor-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 10px;
+    text-align: left;
+}
+
+.emisor-card h2 {
+    margin-top: 0;
+}
+
+.investment {
+    margin-top: 20px;
+}
+
+.investment input {
+    padding: 10px;
+    margin-right: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="number"] {
+    font-weight: bold;
+    padding: 1%;
+    margin: 1px 0;
+    width: 100%;
+    max-width: 100px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+   
+}
+
+input[type="number"]:focus {
+    border-color: #007aff;
+    box-shadow: 0 0 10px rgba(0, 122, 255, 0.5);
+}
+
+.investment button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.investment button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f9fa;
+}
+
+.card-buy {
+    background-color: #d4eddaa6; /* Verde claro */
+    border-color: #008920;
+}
+
+.card-sell {
+    background-color: #f8d7dab1; /* Rojo claro */
+    border-color: #ff0019;
+     
+}
+
+.card-hold {
+    background-color: #fff3cd; /* Amarillo claro */
+    border-color: #ffbf0027;
+}
+
+.currency {
+    font-weight: bold;
+}
+
+.text-buy {
+    color: green;
+}
+
+.text-sell {
+    color: red;
+}
+
+.text-hold {
+    color: brown;
+}
